@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingData"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/booking_data_linearL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/lavender">
+
+        <ImageView
+            android:id="@+id/backArrow_booking_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/back_arrow">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:text="@string/booking_history"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+
+</LinearLayout>

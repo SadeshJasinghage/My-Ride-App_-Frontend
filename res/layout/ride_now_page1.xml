@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RideNowPage1Activity">
+
+    <LinearLayout
+        android:id="@+id/ride_now_pageLL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/backArrow_ride_now_page1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/back_arrow">
+
+        </ImageView>
+
+
+         <LinearLayout
+            android:id="@+id/reserve_ride_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/ride_now_page_intro_background">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/let_s_ride"
+                 android:textStyle="bold"
+                 android:textSize="32sp"
+                 android:layout_gravity="center"
+                 android:gravity="start"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="10dp"
+                 android:textColor="@color/black"
+
+                 >
+
+             </TextView>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal"
+                 android:layout_marginBottom="20dp"
+
+                 >
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="10"
+                     android:src="@drawable/ic_assignment_48"
+                     android:layout_marginStart="10dp"
+                     android:contentDescription="@string/assignment_img">
+
+                 </ImageView>
+
+                 <View
+                     android:layout_width="2dp"
+                     android:layout_height="70dp"
+                     android:background="@color/colorBlack"
+                     android:layout_marginStart="5dp"
+                     android:layout_marginEnd="5dp"
+                     />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="90"
+                     android:layout_marginEnd="10dp"
+                     android:text="@string/RideNow_intro"
+                     android:textSize="16sp"
+
+                     />
+
+             </LinearLayout>
+
+
+
+         </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/rideNow_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ride_now_pageLL1"
+        app:layout_constraintBottom_toTopOf="@+id/button_layout_rideNow"
+        android:overScrollMode="ifContentScrolls"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/where_would_you_like_to_pick_up_bike"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+
+                />
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pickUpPlace"
+                    android:layout_margin="16dp"
+                    android:hint="@string/select_pickup_place"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    tools:ignore="ExtraText">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ride_now_auto_complete_pickup_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:inputType="none"
+                        tools:ignore="LabelFor"
+                        android:importantForAccessibility="no"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        />
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/where_would_you_like_to_drop_the_bike"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+
+                />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/droppingPlace"
+                    android:layout_margin="16dp"
+                    android:hint="@string/select_dropping_place"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    tools:ignore="ExtraText">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ride_now_auto_complete_drop_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:inputType="none"
+                        tools:ignore="LabelFor"
+                        android:importantForAccessibility="no"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        />
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_a_bike"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+
+                />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/booked_bike"
+                    android:layout_margin="16dp"
+                    android:hint="@string/select_bike"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    tools:ignore="ExtraText">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ride_now_auto_complete_bike"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:inputType="none"
+                        tools:ignore="LabelFor"
+                        android:importantForAccessibility="no"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        />
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_layout_rideNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+
+
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/end_btn_rideNow"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/end"
+            android:textSize="23sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bottom_button_backgrond"
+            android:layout_gravity="start"
+
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_btn_rideNow"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/start"
+            android:textSize="23sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bottom_button_backgrond"
+            android:layout_gravity="end"
+
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

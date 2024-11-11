@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingPage1"
+    android:background="@color/colorAccent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorLightGreen_accent1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+        <ImageView
+            android:id="@+id/imgBookingPage1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/booking_page1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/reserve_ride_layout1"
+            android:scaleType="centerCrop"
+            android:layout_weight="60"
+            android:contentDescription="@string/booking_page_1_background" />
+
+
+        <LinearLayout
+            android:id="@+id/reserve_ride_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgBookingPage1"
+            android:background="@drawable/booking_page_bottom_background"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                >
+                <ImageView
+                    android:id="@+id/backArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_back_arrow"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="@string/back_arrow">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:text="@string/reserve_your_ride"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_assignment_48"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/assignment_img">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/booking_instruction_1"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:src="@drawable/ic_cancel_48"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/cancel_img">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="90"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/Booking_instruction_2"
+                    android:textSize="16sp"
+                    android:gravity="start"
+
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Reserve_Ride_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/reserve_ride"
+                android:textSize="23sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bottom_button_backgrond"
+                android:layout_gravity="center"
+
+                >
+
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

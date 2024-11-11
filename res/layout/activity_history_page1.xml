@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryPage1Activity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_history_linearL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorLightGreen">
+
+        <ImageView
+            android:id="@+id/backArrow_activity_hisPage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/back_arrow">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:text="@string/activity_history"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bookingHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ride_now_page_intro_background"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/ic_assignment_48"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/assignment_img">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_bookingHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:text="@string/booking_history"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_rideHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ride_now_page_intro_background"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/ic_history"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/assignment_img"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:text="@string/ride_history"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
