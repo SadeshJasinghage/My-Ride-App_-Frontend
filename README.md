@@ -1,5 +1,5 @@
-# This Repository represent that Resources files & Android manifest file reguarding to user interfaces
-## Full Functinal user interfaces of App :
+## This Repository represent that Resources files & Android manifest file reguarding to user interfaces
+### Full Functinal user interfaces of App :
 
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1PRe7eFQvyMGUVw3OeuLJ9vV1YVdfl_pv" alt="Alt text" width="100"/>
