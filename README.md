@@ -27,10 +27,3 @@
 6. Safety and Emergency Features
 
 
-
-
-Voice-Activated Navigation
-Enable voice commands to allow users to book or navigate hands-free, adding convenience for drivers and users in transit.
-
-Integration with Calendar and Events
-Sync with users' calendars to suggest rides for scheduled meetings or events. This could make planning and booking a ride to upcoming events more seamless.
