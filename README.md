@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a7caa30e-7f1d-4d3d-97f6-bb093f62b7c5)## This Repository represent that Resources files & Android manifest file reguarding to user interfaces
+## This Repository represent that Resources files & Android manifest file reguarding to user interfaces
 ### Short description about My Ride App:
 <p align="left">
   The "My Ride" app is a navigation and ride management application designed to help users organize, plan, and track their rides. It likely includes features such as real-time navigation, destination search, and possibly integration with mapping services like Google Maps to display routes and destinations. It may also support ride history tracking, ride scheduling, and potentially integrates with location-based services to provide accurate and efficient ride options.
